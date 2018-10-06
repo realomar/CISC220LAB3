@@ -23,6 +23,11 @@ public:
 	~SLL();
 	void printSLL();
 	void insertInOrder(int r, string c);
+	void push(int r, string c);
+	void addAtFront(int r, string c);
+	void addFirst(int r, string c);
+	int pop();
+	double getAve();
 };
 
 
