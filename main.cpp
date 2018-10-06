@@ -42,18 +42,12 @@ int main(){
 }
 
 void printGreatestBook(Book arr[], int length){ // putting length in the parameters. Will be 5 for testing
-	double tmp = 0;
-	int position;
-	for(int i = 0; i <length-1; i++){
-		if(arr[i] > arr[i+1] && tmp > arr[i].avgRating()){
+	double tmp = arr[0].avgRating();
+	int position = 0;
+	for(int i = 1; i <length; i++){
+		if(arr[i].avgRating() > tmp){
 			tmp = arr[i].avgRating();
 			position = i;
-		}
-		else if(arr[i] < arr[i+1] && tmp > arr[i+1].avgRating()){
-			tmp = arr[i+1].avgRating();
-			position = i+1;
-		}
-		else{
 		}
 	}
 	arr[position].bookInfo();
