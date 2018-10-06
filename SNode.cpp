@@ -34,7 +34,6 @@ SNode::~SNode(){ // this destructor warns the user if they delete a node that is
 }
 
 void SNode::printNode(){ // prints node information
-	cout << "Rating: " << rating << endl;
+	cout << "Rating: " << rating << ", ";
 	cout << "Comments: " << comments << endl;
-	cout << "Has next: " << (next != NULL) << endl;
 }
