@@ -92,7 +92,7 @@ void Book::bookInfo(){
 	cout<<" "<< endl;
 }
 
-//Problem 7: Overload the '>' operator in this class.
+//Problem 7A: Overload the '>' operator in this class.
 
 bool Book::operator>(Book x){
 	if (avgRating() > x.avgRating()){
@@ -103,3 +103,13 @@ bool Book::operator>(Book x){
 	}
 }
 
+//Problem 7B: Overload the '<' operator in this class.
+
+bool Book::operator<(Book x){
+	if (avgRating() < x.avgRating()){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
