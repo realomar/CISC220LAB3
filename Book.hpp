@@ -45,7 +45,7 @@ public:
 
 	double avgRating();
 	void printAvgRating();
-	void bookInfo(Book a);
+	void bookInfo();
 	bool operator>(Book a);
 
 };
