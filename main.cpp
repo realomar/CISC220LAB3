@@ -24,6 +24,8 @@ using namespace std;
 void printGreatestBook(Book arr[], int length);// Part A main: Problem 1
 
 int main(){
+
+	// problem 1
 	int b1Ratings[10] = {6,5,8,7,2,8,2,9,4,10};
 	Book b1 = Book("Dan", "Brown", "The Da Vinci Code", 2003, b1Ratings);
 	int b2Ratings[10] = {7,3,7,1,6,2,6,1,6,3};
