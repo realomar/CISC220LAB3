@@ -23,3 +23,13 @@ using namespace std;
 void main(){
 
 }
+
+void printGreatestBook(Book arr[], int length){ // putting length in the parameters. Will be 5 for testing
+	double tmp1 = 0;
+	int position;
+	for(int i = 0; i <length; i++){
+		if(arr[i] > tmp){
+			tmp = arr[i];
+		}
+	}
+}
