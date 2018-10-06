@@ -38,5 +38,5 @@ void printGreatestBook(Book arr[], int length){ // putting length in the paramet
 		}
 		else{}
 	}
-	arr[position].bookInfo;
+	arr[position].bookInfo();
 }
