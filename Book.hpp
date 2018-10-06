@@ -23,6 +23,7 @@
 using namespace std;
 
 class Book{
+	// fields containing book information // question 1
 	string firstName;
 	string lastName;
 	int *bookRatings = new int[10];
@@ -34,7 +35,9 @@ public:
 	//Constructors:
 
 	Book();
+	// problem 2a
 	Book(string firstName, string lastName, string bookName, int yearPublished);
+	// problem 2b
 	Book(string firstName, string lastName, string bookName, int yearPublished, int bookRatings[]);
 
 	//Destructor:

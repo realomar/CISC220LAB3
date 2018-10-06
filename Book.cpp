@@ -48,10 +48,7 @@ Book :: Book (string first, string last, string book, int year, int arrBookRatin
 //Problem 3: Destructor
 
 Book :: ~Book(){
-	for(int i=0; i <10; i++){
-		delete [] bookRatings[i];
-	}
-	delete [] bookRatings;
+	delete []bookRatings;
 }
 
 //Problem 4: Average rating (traverses through the array bookRatings and sums the numbers and returns their average)
