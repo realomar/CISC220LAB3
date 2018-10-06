@@ -2,7 +2,7 @@
  * SNode.hpp
  *
  *  Created on: Oct 6, 2018
- *      Author: Omar Ahmad
+ *      Author: CISC220 LAB3
  */
 
 #ifndef SNODE_HPP_
