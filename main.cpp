@@ -33,6 +33,7 @@ int main(){
 	cout << " "<<endl;
 	cout<<"The info about the book with the greatest ratings: "<<endl;
 	cout<<" "<<endl;
+	//Creating five books with their respective rating arrays.
 	int b1Ratings[10] = {6,5,8,7,2,8,2,9,4,10};
 	Book b1 = Book("Dan", "Brown", "The Da Vinci Code", 2003, b1Ratings);
 	int b2Ratings[10] = {7,3,7,1,6,2,6,1,6,3};
@@ -45,6 +46,7 @@ int main(){
 	Book b5 = Book("Louise", "Hay", "You Can Heal Your Life", 2003, b5Ratings);
 	Book bookArr[5] = {b1,b2,b3,b4,b5};
 	int length = 5;
+	//Calls function and prints the information of the book with the greatest rating.
 	printGreatestBook(bookArr, length);
 	stars();
 	stars();
@@ -52,6 +54,7 @@ int main(){
 	cout<< " " <<endl;
 	cout<<"Part A: Problem 2:" <<endl;
 	cout<< " " <<endl;
+	//creating array of ratings and book for problem 2
 	int b1A2Ratings[10] = {6,8,3,8,3,2,7,3,4,6};
 	Book *b1A2 = new Book("Anna", "Sewell", "Black Beauty", 1877, b1A2Ratings);
 	b1A2->bookInfo();
@@ -61,6 +64,7 @@ int main(){
 	stars();
 	cout<< " " <<endl;
 	cout<<"Part A: Problem 3:" <<endl;
+	//creating 2 books to be put in an array and creating 2 arrays of ratings for the books for problem 3.
 	cout<< " " <<endl;
 	int b1A3Ratings[10] = {6,8,3,8,3,2,7,3,4,6};
 	Book b1A3 = Book("Anna", "Sewell", "Black Beauty", 1877, b1A3Ratings);
@@ -79,15 +83,11 @@ int main(){
 	stars();
 	stars();
 	cout<< " " <<endl;
-	cout<<"Part B: Problem 1:" <<endl;
-	cout<< " " <<endl;
-
-
-
+	//end of part A
 	return 0;
 }
 
-void printGreatestBook(Book arr[], int length){ // putting length in the parameters. Will be 5 for testing
+void printGreatestBook(Book arr[], int length){ // A function that takes an array of books and the length of the array (number of books in the array) as an input. It loops through the array and finds the book with the greatest rating and prints its information using a previouslt defined function in the header.  Will be 5 for testing in main
 	double tmp = arr[0].avgRating();
 	int position = 0;
 	for(int i = 1; i <length; i++){

@@ -42,15 +42,15 @@ public:
 
 	//Destructor:
 
-	~Book();
+	~Book(); //Destructs the book rating array from the heap.
 
 	//Methods:
 
-	double avgRating();
-	void printAvgRating();
-	void bookInfo();
-	bool operator>(Book a);
-	bool operator<(Book a);
+	double avgRating(); //Returns the average rating of the book
+	void printAvgRating(); //Prints the average rating of the book.
+	void bookInfo(); //Prints the information about the book such as he author's first and last name, it also prints the year of publication, and the average rating of the book.
+	bool operator>(Book a); //Overloads the '>' operator
+	bool operator<(Book a); //Overloads the '<' operator
 
 };
 
